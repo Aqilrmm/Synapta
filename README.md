@@ -1,4 +1,4 @@
-# 🤖 AI Agent Framework
+# 🤖 Synapta
 
 A comprehensive, modular framework for building and managing AI agents with inter-agent communication, shared context, and task scheduling capabilities.
 
@@ -46,8 +46,8 @@ A comprehensive, modular framework for building and managing AI agents with inte
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd ai-agent-framework
+   git clone https://github.com/Aqilrmm/Synapta
+   cd Synapta
    ```
 
 2. **Install dependencies**:
@@ -226,7 +226,7 @@ self.scheduler.schedule_recurring(
 
 ```yaml
 framework:
-  name: "AI Agent Framework"
+  name: "Synapta"
   version: "1.0.0"
   log_level: "INFO"
 

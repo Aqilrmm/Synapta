@@ -8,11 +8,11 @@ from utils.logger import setup_logger
 from utils.helpers import load_config
 
 async def main():
-    """Main entry point for the AI Agent Framework"""
+    """Main entry point for the Synapta"""
     
     # Setup logging
     logger = setup_logger()
-    logger.info("🚀 Starting AI Agent Framework...")
+    logger.info("🚀 Starting Synapta...")
     
     try:
         # Load global configuration
@@ -37,7 +37,7 @@ async def main():
             await asyncio.sleep(1)
             
     except KeyboardInterrupt:
-        logger.info("🛑 Shutting down AI Agent Framework...")
+        logger.info("🛑 Shutting down Synapta...")
         await registry.stop_all_agents()
         logger.info("👋 Goodbye!")
     except Exception as e:

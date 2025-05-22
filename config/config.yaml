@@ -1,6 +1,6 @@
-# AI Agent Framework Configuration
+# Synapta Configuration
 framework:
-  name: "AI Agent Framework"
+  name: "Synapta"
   version: "1.0.0"
   log_level: "INFO"
 

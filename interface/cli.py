@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI Agent Framework - Command Line Interface
+Synapta - Command Line Interface
 Interactive CLI for managing and monitoring agents
 """
 
@@ -23,7 +23,7 @@ from utils.logger import setup_logger, get_logger
 from utils.helpers import load_config, load_yaml_config
 
 class AgentFrameworkCLI:
-    """Command line interface for the AI Agent Framework"""
+    """Command line interface for the Synapta"""
     
     def __init__(self):
         self.logger = setup_logger()
@@ -136,7 +136,7 @@ class AgentFrameworkCLI:
             print("❌ Framework not initialized")
             return
         
-        print("\n📊 AI Agent Framework Status")
+        print("\n📊 Synapta Status")
         print("=" * 40)
         
         # Framework status
@@ -241,7 +241,7 @@ class AgentFrameworkCLI:
     
     async def interactive_mode(self):
         """Run interactive CLI mode"""
-        print("🎯 AI Agent Framework - Interactive Mode")
+        print("🎯 Synapta - Interactive Mode")
         print("Type 'help' for available commands, 'quit' to exit")
         
         await self.initialize()
@@ -345,7 +345,7 @@ Examples:
 
 def main():
     """Main CLI entry point"""
-    parser = argparse.ArgumentParser(description="AI Agent Framework CLI")
+    parser = argparse.ArgumentParser(description="Synapta CLI")
     parser.add_argument('--interactive', '-i', action='store_true', 
                        help='Run in interactive mode')
     parser.add_argument('--discover', action='store_true',

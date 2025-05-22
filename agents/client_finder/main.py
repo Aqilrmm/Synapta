@@ -1,4 +1,4 @@
-# AI Agent Framework - Client Finder Agent
+# Synapta - Client Finder Agent
 
 import asyncio
 import logging
