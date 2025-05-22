@@ -1,0 +1,18 @@
+name: "client_finder"
+enabled: true
+execution_interval: 60  # seconds between executions
+
+# Configuration for client finding logic
+client_search:
+  max_results: 100
+  search_keywords:
+    - "client"
+    - "customer"
+    - "business"
+  api_endpoint: "https://api.clientfinder.com/search"
+  api_key: "${CLIENT_FINDER_API_KEY}"  # Read from environment variable
+
+# Logging configuration
+logging:
+  level: "INFO"
+  log_file: "logs/client_finder.log"

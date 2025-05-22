@@ -1,0 +1,42 @@
+# AI Agent Framework Configuration
+framework:
+  name: "AI Agent Framework"
+  version: "1.0.0"
+  log_level: "INFO"
+
+# Global settings
+settings:
+  max_agents: 50
+  message_queue_size: 1000
+  shared_context_cleanup_interval: 3600  # seconds
+
+# Agent management
+agents:
+  discovery_paths:
+    - "agents/"
+  auto_start: true
+  restart_on_failure: true
+
+# Message bus configuration
+message_bus:
+  max_message_size: 1048576  # 1MB
+  message_timeout: 30
+  enable_message_logging: false
+
+# Scheduler configuration
+scheduler:
+  enabled: true
+  max_concurrent_tasks: 10
+  task_timeout: 300  # 5 minutes
+
+# Database configuration (optional)
+database:
+  enabled: false
+  type: "sqlite"
+  connection_string: "agents.db"
+
+# Security settings
+security:
+  enable_agent_isolation: true
+  max_memory_per_agent: "256MB"
+  enable_api_authentication: false

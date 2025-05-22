@@ -1,0 +1,29 @@
+# config.yaml for the bug_hunter agent
+
+agent_name: "bug_hunter"
+enabled: true
+execution_interval: 60  # seconds between executions
+
+# Configuration for bug hunting
+target_url: "https://example.com"  # URL to scan for vulnerabilities
+scan_depth: 3  # Depth of the scan
+alert_threshold: 5  # Number of alerts before notifying
+
+# Logging configuration
+log_level: "INFO"
+log_file: "logs/bug_hunter.log"
+
+# Email notifications
+email_notifications:
+  enabled: true
+  recipient: "alerts@example.com"
+  smtp_server: "smtp.example.com"
+  smtp_port: 587
+  username: "your_email@example.com"
+  password: "your_email_password"
+
+# Custom settings
+custom_settings:
+  max_retries: 3
+  timeout: 30  # seconds for requests
+  user_agent: "BugHunter/1.0"

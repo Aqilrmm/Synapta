@@ -1,0 +1,19 @@
+# Example Agent Configuration
+name: "example_agent"
+enabled: true
+execution_interval: 30  # seconds between executions
+
+# Custom configuration for this agent
+custom_action_enabled: true
+max_executions: 100
+
+# Agent-specific settings
+settings:
+  log_level: "INFO"
+  debug_mode: false
+  
+# External integrations (example)
+integrations:
+  api_enabled: false
+  api_endpoint: "https://api.example.com"
+  api_key: "${API_KEY}"  # Read from environment variable
